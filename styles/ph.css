@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #e6f7ff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #00796b;
+  }
+  
+  .info {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  .live-section {
+    margin-top: 30px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .live-box {
+    margin-top: 20px;
+  }
+  
+  #phValue {
+    font-size: 2.5rem;
+    color: #00796b;
+  }
+  
+  #loading {
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #avgOutput {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    text-align: left;
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('../assets/splash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.85); /* subtle white overlay for readability */
+    padding: 30px;
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  

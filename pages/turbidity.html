@@ -1,0 +1,85 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Live Turbidity Monitoring</title>
+  <link rel="stylesheet" href="../styles/ph.css" />
+  <script type="module" src="../script/turbidity.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🌊 Real-Time Milk Turbidity Monitoring</h1>
+
+    <section class="info">
+      <h2>What is Turbidity?</h2>
+      <p>
+        Turbidity is the measure of how clear or cloudy a liquid is. In milk analysis, it indicates the presence of adulterants or suspended particles.
+      </p>
+      <ul>
+        <li><strong>&gt; 3500:</strong> Clean Water (High Clarity)</li>
+        <li><strong>1000 - 3500:</strong> Moderately Turbid (Possible contamination)</li>
+        <li><strong>&lt; 1000:</strong> Highly Turbid (High adulteration risk)</li>
+      </ul>
+      <p><strong>Pure milk typically has a turbidity value greater than 3500</strong>.</p>
+    </section>
+
+    <section class="live-section">
+      <button id="showLiveBtn">Show Live Turbidity Data</button>
+
+      <div class="live-box" id="liveBox">
+        <h3>📡 Live Turbidity Value: <span id="turbidityValue">---</span></h3>
+        <p id="turbidityStatus" style="font-weight: bold; color: #555;"></p>
+
+        <div id="loading" class="hidden">⚙️ Calculating average...</div>
+        <div id="avgOutput" class="hidden"></div>
+        <button id="recalculateBtn" class="disabled" disabled>🔁 Recalculate</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Live Turbidity Monitoring</title>
+  <link rel="stylesheet" href="../styles/ph.css" />
+  <script type="module" src="../script/turbidity.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🌊 Real-Time Milk Turbidity Monitoring</h1>
+
+    <section class="info">
+      <h2>What is Turbidity?</h2>
+      <p>
+        Turbidity is the cloudiness of a liquid caused by suspended solids. In milk analysis, it helps detect impurities such as turmeric, coffee powder, or water dilution.
+      </p>
+      <ul>
+        <li><strong>&gt; 2500:</strong> Clear Milk (No contamination)</li>
+        <li><strong>&lt;= 2500:</strong> Contaminated Milk (Adulterated or diluted)</li>
+      </ul>
+      <p><strong>Clean milk has high turbidity due to purity and consistency. Adulterated milk drops the value.</strong></p>
+    </section>
+
+    <section class="live-section">
+      <button id="showLiveBtn">Show Live Turbidity Data</button>
+
+      <div class="live-box" id="liveBox">
+        <h3>📡 Live Turbidity Value: <span id="turbidityValue">---</span></h3>
+        <p id="turbidityStatus" style="font-weight: bold; color: #555;"></p>
+
+        <div id="loading" class="hidden">⚙️ Calculating average...</div>
+        <div id="avgOutput" class="hidden"></div>
+
+        <button id="recalculateBtn" class="disabled" disabled>🔁 Recalculate</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

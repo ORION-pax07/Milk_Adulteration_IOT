@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live pH Monitoring</title>
+  <link rel="stylesheet" href="../styles/ph.css">
+  <script type="module" src="../script/ph.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🧪 Real-Time Milk pH Monitoring</h1>
+
+    <section class="info">
+      <h2>What is pH?</h2>
+      <p>The pH scale measures how acidic or basic a substance is. It ranges from 0 (strong acid) to 14 (strong base), with 7 being neutral.</p>
+      <ul>
+        <li><strong>pH < 7:</strong> Acidic</li>
+        <li><strong>pH = 7:</strong> Neutral</li>
+        <li><strong>pH > 7:</strong> Basic</li>
+      </ul>
+      <p><strong>Milk normally has a pH between 6.6 – 6.8</strong>. Deviations may indicate contamination or adulteration.</p>
+    </section>
+
+    <section class="live-section">
+      <button id="showLiveBtn">Show Live pH Data</button>
+
+      <div class="live-box" id="liveBox">
+        <h3>📡 Live pH Value: <span id="phValue">---</span></h3>
+        <div id="loading" class="hidden">⚙️ Calculating average...</div>
+        <div id="avgOutput" class="hidden"></div>
+        <button id="recalculateBtn" class="disabled" disabled>🔁 Recalculate</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

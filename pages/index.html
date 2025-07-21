@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milk Adulteration Detection Dashboard</title>
+  <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+<body>
+  <video autoplay muted loop class="background-video">
+    <source src="../assets/video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="overlay">
+    <div class="container">
+      <header>
+        <h1>☕ Milk Adulteration Detection System</h1>
+        <p>Real-time Monitoring of Milk Quality using pH and Turbidity Sensors</p>
+      </header>
+
+      <section class="info">
+        <h2>🔍 What is Milk Adulteration?</h2>
+        <p>
+          Milk adulteration is the addition of harmful substances like water, starch, detergent, or synthetic chemicals to milk.
+          It degrades the nutritional value and poses health risks. Some common substances used for adulteration include:
+        </p>
+        <ul>
+          <li>Water (to increase volume)</li>
+          <li>Starch (to thicken)</li>
+          <li>Detergent (to create foam)</li>
+          <li>Turmeric / Coffee Powder (to alter color)</li>
+        </ul>
+      </section>
+
+      <section class="highlights">
+        <h2>🔹 Key Parameters for Detection</h2>
+        <ul>
+          <li>🔢 <strong>pH Level:</strong> Pure milk typically has a pH between <strong>6.6 and 6.8</strong>. Lower or higher values indicate adulteration.</li>
+          <li>🌊 <strong>Turbidity:</strong> Measures the clarity of milk. Higher turbidity values usually indicate cleaner milk.</li>
+          <li>⚠️ Extreme values in either parameter trigger a contamination warning.</li>
+        </ul>
+      </section>
+
+      <div class="cta dual-buttons">
+        <a href="./ph.html"><button class="monitor-btn">📈 pH Calculation</button></a>
+        <a href="./turbidity.html"><button class="monitor-btn">🌊 Turbidity Calculation</button></a>
+      </div>
+
+      <!-- <footer>
+        <p>Made with ❤️ for Project Submission | April 2025</p> -->
+      <!-- </footer> -->
+    </div>
+  </div>
+</body>
+
+</html>
